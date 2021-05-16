@@ -18,8 +18,13 @@ class House
 
   end
 
-  def line(number)
-    "This is the #{phrases.last(number).join(" ")}\n"
+  def line(number, pirate_mode=false)
+    introduction = "This is"
+    if pirate_mode
+      introduction = "Thar be"
+    end
+
+    "#{introduction} the #{phrases.last(number).join(" ")}\n"
   end
 
   def recite
