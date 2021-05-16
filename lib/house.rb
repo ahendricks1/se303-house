@@ -1,5 +1,9 @@
 class House
 
+  def lines(number)
+    phrase = []
+  end
+
   def line(number)
     case number
     when 1
