@@ -18,37 +18,8 @@ class House
 
   end
 
-  def lines(number)
-    "This is the #{phrases.last(number).join(" ")}\n"
-  end
-
   def line(number)
-    case number
-    when 1
-      lines(number)
-    when 2
-      lines(number)
-    when 3
-      lines(number)
-    when 4
-      lines(number)
-    when 5
-      lines(number)
-    when 6
-      lines(number)
-    when 7
-      lines(number)
-    when 8
-      lines(number)
-    when 9
-      lines(number)
-    when 10
-      lines(number)
-    when 11
-      lines(number)
-    when 12
-      lines(number)
-    end
+    "This is the #{phrases.last(number).join(" ")}\n"
   end
 
   def recite
