@@ -2,6 +2,7 @@ class House
 
   def phrases
     [
+      "rat that ate the",
       "malt that lay in the",
       "house that Jack built."
     ]
@@ -19,7 +20,7 @@ class House
     when 2
       lines(number)
     when 3
-      "This is the rat that ate the malt that lay in the house that Jack built.\n"
+      lines(number)
     when 4
       "This is the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     when 5
