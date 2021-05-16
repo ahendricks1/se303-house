@@ -1,8 +1,15 @@
 class House
 
+  def phrases
+    [
+      "malt that lay in the",
+      "house that Jack built."
+    ]
+
+  end
+
   def lines(number)
-    phrase = ["house that Jack built."]
-    return "This is the #{phrase.join()}\n"
+    "This is the #{phrases.last(number).join(" ")}\n"
   end
 
   def line(number)
@@ -10,7 +17,7 @@ class House
     when 1
       lines(number)
     when 2
-      "This is the malt that lay in the house that Jack built.\n"
+      lines(number)
     when 3
       "This is the rat that ate the malt that lay in the house that Jack built.\n"
     when 4
