@@ -30,7 +30,10 @@ class House
     "#{@intro} the #{phrases.last(number).join(" ")}\n"
   end
 
-  def recite
+  def recite(pirate_mode=false)
+    if pirate_mode
+      @intro = "Thar be"
+    end
     1.upto(12).collect { |number| line(number) }.join("\n")
   end 
 end
