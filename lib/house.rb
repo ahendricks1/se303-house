@@ -1,5 +1,9 @@
 class House
 
+  def initialize
+    @intro = "This is"
+  end
+
   def phrases
     [
       "horse and the hound and the horn that belonged to the",
@@ -19,12 +23,11 @@ class House
   end
 
   def line(number, pirate_mode=false)
-    introduction = "This is"
     if pirate_mode
-      introduction = "Thar be"
+      @intro = "Thar be"
     end
 
-    "#{introduction} the #{phrases.last(number).join(" ")}\n"
+    "#{@intro} the #{phrases.last(number).join(" ")}\n"
   end
 
   def recite
