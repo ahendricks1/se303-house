@@ -19,21 +19,23 @@ class House
       "malt that lay in the",
       "house that Jack built."
     ]
-
   end
 
-  def line(number, pirate_mode=false)
-    if pirate_mode
+  def lyric_version(pirate)
+    if pirate
       @intro = "Thar be"
     end
+  end
+
+  def line(number, pirate=false)
+    lyric_version(pirate)
 
     "#{@intro} the #{phrases.last(number).join(" ")}\n"
   end
 
-  def recite(pirate_mode=false)
-    if pirate_mode
-      @intro = "Thar be"
-    end
+  def recite(pirate=false)
+    lyric_version(pirate)
+
     1.upto(12).collect { |number| line(number) }.join("\n")
   end 
 end
