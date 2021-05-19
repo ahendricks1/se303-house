@@ -99,4 +99,8 @@ This is the horse and the hound and the horn that belonged to the farmer sowing 
     assert_equal expected, House.new.line(1, true)
   end
 
+  def test_thar_line_2
+    expected = "Thar be the malt that lay in the house that Jack built.\n"
+    assert_equal expected, House.new.line(2, true)
+  end
 end
