@@ -48,6 +48,10 @@ class RandomHouse < House
     super
   end
 
+  def line(number)
+    "#{prefix} the #{phrases.sample(number).join(" ")}.\n"
+  end
+
   def recite
     super
   end
