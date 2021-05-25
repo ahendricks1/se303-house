@@ -182,4 +182,6 @@ Thar be the horse and the hound and the horn that belonged to the farmer sowing 
     TEXT
     assert_equal expected, PirateHouse.new.recite
   end
+
+  puts RandomHouse.new.recite
 end
