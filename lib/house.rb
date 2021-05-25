@@ -17,15 +17,15 @@ class House
       "cat that killed the",
       "rat that ate the",
       "malt that lay in the",
-      "house that Jack built."
+      "house that Jack built"
     ]
   end
 
   def line(number)
-    "#{prefix} the #{phrases.last(number).join(" ")}\n"
+    "#{prefix} the #{phrases.last(number).join(" ")}.\n"
   end
 
-  def recite()
+  def recite
     1.upto(12).collect { |number| line(number) }.join("\n")
   end 
 end
