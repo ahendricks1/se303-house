@@ -39,5 +39,17 @@ class PirateHouse < House
 end
 
 class RandomHouse < House
-  
+
+  def prefix
+    super
+  end
+
+  def phrases
+    super
+  end
+
+  def recite
+    super
+  end
+
 end
