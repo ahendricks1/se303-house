@@ -45,7 +45,7 @@ class RandomHouse < House
   end
 
   def phrases
-    super
+    super.slice(0, 11)
   end
 
   def line(number)
