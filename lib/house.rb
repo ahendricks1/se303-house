@@ -1,7 +1,7 @@
 class House
 
   def initialize
-    @intro = "This is"
+    @prefix = "This is"
   end
 
   def phrases
@@ -23,14 +23,14 @@ class House
 
   def lyric_version(pirate)
     if pirate
-      @intro = "Thar be"
+      @prefix = "Thar be"
     end
   end
 
   def line(number, pirate=false)
     lyric_version(pirate)
 
-    "#{@intro} the #{phrases.last(number).join(" ")}\n"
+    "#{@prefix} the #{phrases.last(number).join(" ")}\n"
   end
 
   def recite(pirate=false)
