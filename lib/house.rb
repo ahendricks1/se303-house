@@ -4,6 +4,10 @@ class House
     @prefix = "This is"
   end
 
+  def prefix
+    "This is"
+  end
+
   def phrases
     [
       "horse and the hound and the horn that belonged to the",
@@ -30,7 +34,7 @@ class House
   def line(number, pirate=false)
     lyric_version(pirate)
 
-    "#{@prefix} the #{phrases.last(number).join(" ")}\n"
+    "#{prefix} the #{phrases.last(number).join(" ")}\n"
   end
 
   def recite(pirate=false)
@@ -42,5 +46,8 @@ end
 
 class PirateHouse < House
 
+  def prefix
+    "Thar be"
+  end
   
 end
