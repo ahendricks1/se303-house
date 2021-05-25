@@ -1,9 +1,5 @@
 class House
 
-  def initialize
-    @prefix = "This is"
-  end
-
   def prefix
     "This is"
   end
@@ -25,21 +21,11 @@ class House
     ]
   end
 
-  def lyric_version(pirate)
-    if pirate
-      @prefix = "Thar be"
-    end
-  end
-
-  def line(number, pirate=false)
-    lyric_version(pirate)
-
+  def line(number)
     "#{prefix} the #{phrases.last(number).join(" ")}\n"
   end
 
-  def recite(pirate=false)
-    lyric_version(pirate)
-
+  def recite()
     1.upto(12).collect { |number| line(number) }.join("\n")
   end 
 end
