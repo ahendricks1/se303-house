@@ -109,52 +109,52 @@ This is the horse and the hound and the horn that belonged to the farmer sowing 
     assert_equal expected, House.new.line(3, true)
   end
 
-  def test_line_4
+  def test_thar_line_4
     expected = "Thar be the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     assert_equal expected, House.new.line(4, true)
   end
 
-  def test_line_5
+  def test_thar_line_5
     expected = "Thar be the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     assert_equal expected, House.new.line(5, true)
   end
 
-  def test_line_6
+  def test_thar_line_6
     expected = "Thar be the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     assert_equal expected, House.new.line(6, true)
   end
 
-  def test_line_7
+  def test_thar_line_7
     expected = "Thar be the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     assert_equal expected, House.new.line(7, true)
   end
 
-  def test_line_8
+  def test_thar_line_8
     expected = "Thar be the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     assert_equal expected, House.new.line(8, true)
   end
 
-  def test_line_9
+  def test_thar_line_9
     expected = "Thar be the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     assert_equal expected, House.new.line(9, true)
   end
 
-  def test_line_10
+  def test_thar_line_10
     expected = "Thar be the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     assert_equal expected, House.new.line(10, true)
   end
 
-  def test_line_11
+  def test_thar_line_11
     expected = "Thar be the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     assert_equal expected, House.new.line(11, true)
   end
 
-  def test_line_12
+  def test_thar_line_12
     expected = "Thar be the horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     assert_equal expected, House.new.line(12, true)
   end
 
-  def test_all_the_lines
+  def test_all_thara_lines
     expected = <<-TEXT
 Thar be the house that Jack built.
 
