@@ -49,7 +49,7 @@ class RandomHouse < House
   end
 
   def line(number)
-    "#{prefix} the #{phrases.sample(number).join(" ")}.\n"
+    "#{prefix} the #{phrases.sample(number).join(" ")} house that Jack built.\n"
   end
 
   def recite
