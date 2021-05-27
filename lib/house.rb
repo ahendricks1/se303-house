@@ -40,10 +40,6 @@ end
 
 class RandomHouse < House
 
-  # def prefix
-  #   super
-  # end
-
   def phrases
     super.slice(0, 11)
   end
