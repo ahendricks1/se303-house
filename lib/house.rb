@@ -48,6 +48,10 @@ end
 
 class RandomPirateHouse < House
 
+  def initialize(piratePrefix: PirateHouse)
+    @piratePrefix = piratePrefix
+  end
+
   def prefix
     "Thar be"
   end
