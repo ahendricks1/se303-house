@@ -48,8 +48,8 @@ class RandomHouse < House
     "#{prefix} the #{phrases.sample(number).join(" ")} house that Jack built.\n"
   end
 
-  def recite
-    super
-  end
+  # def recite
+  #   super
+  # end
 
 end
