@@ -45,3 +45,7 @@ class RandomHouse < House
   end
 
 end
+
+class RandomPirateHouse < House
+
+end
