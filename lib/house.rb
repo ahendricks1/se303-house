@@ -40,12 +40,12 @@ end
 
 class RandomHouse < House
 
-  def phrases
-    super.slice(0, 11)
-  end
+  # def phrases
+  #   super.slice(0, 11)
+  # end
 
   def line(number)
-    "#{prefix} the #{phrases.sample(number).join(" ")} house that Jack built.\n"
+    "#{prefix} the #{phrases.slice(0, 11).sample(number).join(" ")} house that Jack built.\n"
   end
 
 end
