@@ -47,9 +47,13 @@ class RandomHouse < House
 end
 
 class RandomPirateHouse < House
-  
+
   def prefix
     "Thar be"
+  end
+
+  def line(number)
+    "#{prefix} the #{phrases.slice(0, 11).sample(number).join(" ")} house that Jack built.\n"
   end
 
 end
