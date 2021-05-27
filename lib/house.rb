@@ -47,5 +47,9 @@ class RandomHouse < House
 end
 
 class RandomPirateHouse < House
+  
+  def prefix
+    "Thar be"
+  end
 
 end
