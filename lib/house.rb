@@ -48,12 +48,12 @@ end
 
 class RandomPirateHouse < House
 
-  def initialize(piratePrefix: PirateHouse)
-    @piratePrefix = piratePrefix
+  def initialize(pirate_template: PirateHouse)
+    @pirate_template = pirate_template
   end
 
   def prefix
-    "Thar be"
+    @pirate_template.new.prefix
   end
 
   def line(number)
