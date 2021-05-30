@@ -1,5 +1,21 @@
 class House
 
+  def subjects
+    [
+      "horse and the hound and the horn",
+      "farmer sowing his corn",
+      "rooster",
+      "priest all shaven and shorn",
+      "man all tattered and torn",
+      "maiden all forlorn",
+      "cow with the crumpled horn",
+      "dog",
+      "cat",
+      "rat",
+      "malt"
+    ]
+  end
+
   def phrases
     [
       "the horse and the hound and the horn that belonged to ",
