@@ -16,18 +16,20 @@ class House
     ]
   end
 
-  def verbs
-    "belonged to",
-    "kept",
-    "woke",
-    "married",
-    "kissed",
-    "milked",
-    "tossed",
-    "worried",
-    "killed",
-    "ate",
-    "lay in"
+  def verbs 
+    [
+      "belonged to",
+      "kept",
+      "woke",
+      "married",
+      "kissed",
+      "milked",
+      "tossed",
+      "worried",
+      "killed",
+      "ate",
+      "lay in"
+    ]
   end
 
   def phrases
