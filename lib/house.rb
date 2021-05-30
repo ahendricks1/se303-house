@@ -47,17 +47,17 @@ end
 
 class RandomPirateHouse < House
 
-  def initialize(pirate_template: PirateHouse, random_template: RandomHouse)
+  def initialize(pirate_template, random_template)
     @pirate_template = pirate_template
     @random_template = random_template
   end
 
   def prefix
-    @pirate_template.new.prefix
+    @pirate_template.prefix
   end
 
   def phrases
-    @random_template.new.phrases
+    @random_template.phrases
   end
 
 end
