@@ -37,7 +37,7 @@ class House
   end
 
   def line(number)
-    "#{prefix} the #{phrases.last(number).join(" ")}.\n"
+    "#{prefix} the #{@@phrases.last(number).join(" ")}.\n"
   end
 
   def recite
@@ -56,7 +56,7 @@ end
 class RandomHouse < House
 
   def line(number)
-    "#{prefix} the #{phrases.slice(0, 11).sample(number).join(" ")} house that Jack built.\n"
+    "#{prefix} the #{@@phrases.slice(0, 11).sample(number).join(" ")} house that Jack built.\n"
   end
 
 end
@@ -72,7 +72,7 @@ class RandomPirateHouse < House
   end
 
   def line(number)
-    "#{prefix} the #{phrases.slice(0, 11).sample(number).join(" ")} house that Jack built.\n"
+    "#{prefix} the #{@@phrases.slice(0, 11).sample(number).join(" ")} house that Jack built.\n"
   end
 
 end
