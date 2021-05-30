@@ -185,5 +185,5 @@ Thar be the horse and the hound and the horn that belonged to the farmer sowing 
 
   puts RandomHouse.new.recite
 
-  puts RandomPirateHouse.new.recite
+  puts RandomPirateHouse.new(PirateHouse.new, RandomHouse.new).recite
 end
