@@ -16,6 +16,20 @@ class House
     ]
   end
 
+  def verbs
+    "belonged to",
+    "kept",
+    "woke",
+    "married",
+    "kissed",
+    "milked",
+    "tossed",
+    "worried",
+    "killed",
+    "ate",
+    "lay in"
+  end
+
   def phrases
     [
       "the horse and the hound and the horn that belonged to ",
