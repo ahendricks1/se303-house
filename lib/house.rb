@@ -47,16 +47,17 @@ end
 
 class RandomPirateHouse < House
 
-  def initialize(pirate_template: PirateHouse)
+  def initialize(pirate_template: PirateHouse, random_template: RandomHouse)
     @pirate_template = pirate_template
+    @random_template = random_template
   end
 
   def prefix
     @pirate_template.new.prefix
   end
 
-  def line(number)
-    "#{prefix} #{phrases.slice(0, 11).sample(number).join("")}the house that Jack built.\n"
+  def phrases
+    @random_template.new.phrases
   end
 
 end
