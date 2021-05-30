@@ -39,8 +39,8 @@ end
 
 class RandomHouse < House
 
-  def line(number)
-    "#{prefix} #{phrases.slice(0, 11).sample(number).join("")}the house that Jack built.\n"
+  def phrases
+    super.shuffle!
   end
 
 end
