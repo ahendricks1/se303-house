@@ -11,7 +11,7 @@ class House
       " the maiden all forlorn",
       " the man all tattered and torn",
       " the priest all shaven and shorn",
-      " the rooster",
+      " the rooster that crowed in the morn",
       " the farmer sowing his corn",
       " the horse and the hound and the horn"
     ]
@@ -54,8 +54,12 @@ class House
     "This is"
   end
 
+  def phrase(number)
+    number.downto(1).collect { |i| subjects[i - 1]+verbs[i - 1] }.join("")
+  end
+
   def line(number)
-    "#{prefix} #{phrases.last(number - 1).join("")}the house that Jack built.\n"
+    "#{prefix}#{phrase(number)} the house that Jack built.\n"
   end
 
   def recite
